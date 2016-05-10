@@ -1,0 +1,145 @@
+@import "reset";
+@import "common/mixins";
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Regular.ttf');
+}  
+
+$deepgray: #5f5f5f;
+
+$red: #e55934;
+$green: #9bc53d;
+
+body {
+	font-size: 16px;
+    letter-spacing: 2px;
+    font-family: 'NotoSerif', Arial,sans-serif;
+    color: #333;
+    @media only screen and (max-width: 991px) {
+    	& {
+    		font-size: 12px;
+    	}
+    }
+}
+
+h1 {
+	font-size: 1.8em;
+	margin-bottom: 1.5em;
+}
+h2 {
+	font-size: 1.2em;
+	margin-bottom: 1em;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 1em;
+	margin: 0.8em 0px;
+	color: $deepgray;
+}
+
+.floatleft {
+	float: left;
+}
+
+.floatright {
+	float: right;
+}
+
+.clearall {
+	clear: both;
+}
+
+hr {
+	border: none;
+	border-bottom: 1px solid #e0e0e0;
+	margin: 1em 0px;
+}
+
+.fa {
+	&:before {
+		display: inline-block;
+		width: 1.5em;
+		text-align: left;
+	}
+}
+
+ol {
+    list-style-type: decimal;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-padding-start: 40px;
+}
+
+.container {
+    padding: 0px 5%;
+}
+
+#content {
+    max-width: 1100px;
+    background: #fff;
+    margin: 7% auto;
+    color: #000;
+    box-shadow: 0 0 30px rgba(0,0,0,0.3);
+    section {
+	    padding: 3% 15%;
+	    position: relative;
+	    border-left: 5px solid;
+	    &:first-child {
+	    	padding-top: 10%;
+	    }
+	    &:last-child {
+	    	padding-bottom: 10%;
+	    }
+	    &.red {
+	    	border-color: $red;
+	    	h1 {
+	    		color: $red;
+	    	}
+	    }
+	    &.green {
+	    	border-color: $green;
+	    	h1,
+	    	a {
+	    		color: $green;
+	    	}
+	    }
+    }
+    .personal {
+    	ul {
+    		li {
+    			width: 50%;
+    			display: inline-block;
+			    line-height: 2em;
+			    margin-bottom: 1em;
+		        vertical-align: middle;
+		        @media only screen and (max-width: 991px) {
+		        	& {
+		        		width: 100%;
+		        	}
+		        }
+    		}
+
+    	}
+    }
+    .company {
+    	font-size: 1em;
+    	line-height: 2em;
+    	margin-bottom: 5em;
+    	> ul {
+			margin-bottom: 1em;
+    	}
+    	.logo {
+    		img {
+    			max-width: 220px;
+    			width: 100%;
+    		}
+    		@media only screen and (max-width: 991px) {
+	    		& {
+	    			float: none;
+	    		}
+	    	}
+    	}
+    }
+}
