@@ -10,6 +10,7 @@ $deepgray: #5f5f5f;
 
 $red: #e55934;
 $green: #9bc53d;
+$blue: #5bc0eb;
 
 body {
 	font-size: 16px;
@@ -85,7 +86,7 @@ ol {
     section {
 	    padding: 3% 15%;
 	    position: relative;
-	    border-left: 5px solid;
+	    border-left: 8px solid;
 	    &:first-child {
 	    	padding-top: 10%;
 	    }
@@ -94,7 +95,8 @@ ol {
 	    }
 	    &.red {
 	    	border-color: $red;
-	    	h1 {
+	    	h1,
+	    	a {
 	    		color: $red;
 	    	}
 	    }
@@ -103,6 +105,13 @@ ol {
 	    	h1,
 	    	a {
 	    		color: $green;
+	    	}
+	    }
+	    &.blue {
+	    	border-color: $blue;
+	    	h1,
+	    	a {
+	    		color: $blue;
 	    	}
 	    }
     }
@@ -140,6 +149,9 @@ ol {
 	    			float: none;
 	    		}
 	    	}
+    	}
+    	&:last-child {
+    		margin-bottom: 2em;
     	}
     }
 }
