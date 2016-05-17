@@ -1,8 +1,6 @@
 @import "normalize";
 @import "common/mixins";
 
-@import "scrollr";
-
 @font-face {
 	font-family: 'Montserrat';
 	src: url('../fonts/Montserrat-Regular.ttf');
@@ -87,7 +85,11 @@ ol {
     -webkit-padding-start: 40px;
 }
 
+@import "scrollr";
+@import "envelope";
+
 .container {
+	position: relative;
 	margin-top: 2100px;
     padding: 0px 5%;
     @media only screen and (max-width: $mobile_size) {
@@ -98,6 +100,7 @@ ol {
 }
 
 #content {
+	position: relative;
     max-width: 1100px;
     background: #fff;
     margin: 7% auto;
@@ -112,9 +115,6 @@ ol {
     section {
 	    position: relative;
 	    padding: 3% 15%;
-	    &:first-child {
-	    	padding-top: 10%;
-	    }
 	    &:last-child {
 	    	padding-bottom: 10%;
 	    }
@@ -144,6 +144,7 @@ ol {
 	    }
     }
     .personal {
+    	padding-top: 10%;
     	&:before {
     		content: "";
     		position: absolute;
@@ -265,64 +266,27 @@ ol {
     	}
 	}
 }
-.envelope {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    text-align: center;
-    background-color: #3E82D6;
-    z-index: 1;
-    @include keyframes(bounce) {
-        0%, 20%, 50%, 80%, 100% {
-            @include transform(translateY(0));
-        }
-        40% {
-            @include transform(translateY(-30px));
-            -webkit-transform: translateY(-30px)
-        }
-        60% {
-            @include transform(translateY(-15px));
-            -webkit-transform: translateY(-15px)
-        }
-    }
-    #bottom,
-    #mail,
-    #cover,
-    #top {
-	    position: absolute;
-	    top: 50%;
-	    margin-top: -400px;
-	    left: 50%;
-	    width: 600px;
-	    margin-left: -300px;
-    }
-    #bottom {
-    	z-index: 100;
-    }
-    #mail {
-    	z-index: 999;
-    }
-    #cover {
-    	z-index: 1000;
-    }
-    .hint {
-    	position: absolute;
-    	bottom: 0.5em;
-    	width: 100%;
-    	text-align: center;
-    	color: #FFF;
-    	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-    	font-size: 2em;
-    	@include animation(bounce 3s infinite);
-    	i {
-		    font-size: 0.8em;
-    	}
-    	
-    }
-    @media only screen and (max-width: $mobile_size) {
-    	& {
-    		display: none !important;
-    	}
-    }
+
+.photo {
+    position: fixed;
+    bottom: 2em;
+    right: 7%;
+    width: 8em;
+    height: auto;
+	img {
+		width: 100%;
+		@include border-radius(50%);
+		box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
+	}
+	@media only screen and (max-width: $mobile_size) {
+		& {
+		    position: absolute;
+		    right: 2em;
+		    top: 2em;
+		    bottom: initial;
+		    img {
+				box-shadow: none;
+			}
+		}
+	}
 }
