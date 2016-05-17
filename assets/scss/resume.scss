@@ -257,16 +257,10 @@ ol {
 		    -webkit-padding-start: 0px;
     		li {
     			line-height: 2em;
-			    margin-left: 2em;
 			    margin-bottom: 1em;
 			    .gray {
 			    	color: $deepgray;
 			    }
-    			i {
-    				font-size: 0.5em;
-    				line-height: 2em;
-				    margin-left: -2em;
-    			}
     		}
     	}
 	}
@@ -278,6 +272,7 @@ ol {
     height: 100vh;
     text-align: center;
     background-color: #3E82D6;
+    z-index: 1;
     @include keyframes(bounce) {
         0%, 20%, 50%, 80%, 100% {
             @include transform(translateY(0));
@@ -301,6 +296,15 @@ ol {
 	    left: 50%;
 	    width: 600px;
 	    margin-left: -300px;
+    }
+    #bottom {
+    	z-index: 100;
+    }
+    #mail {
+    	z-index: 999;
+    }
+    #cover {
+    	z-index: 1000;
     }
     .hint {
     	position: absolute;
