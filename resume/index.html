@@ -11,7 +11,7 @@
 	<meta name="description" content="前端工程師, Frontend">
 	<meta name="author" content="Juin-Hui Fu">
 	<meta name="copyright" content="Copyright © Juin-Hui Fu All rights reserved.">
-	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<meta name="format-detection" content="telephone=no">
 	<script src="https://use.fontawesome.com/7ad7214e06.js"></script>
 	<link rel="stylesheet" type="text/css" href="../assets/css/resume.css">
 	<title>Juin-Hui Fu</title>
@@ -19,13 +19,14 @@
 <body id="skrollr-body">
 
 	<div class="envelope" 
-	data-0="position:fixed; top: 0px; opacity: 1;"
-	data-1200="position:fixed; top: 0px; opacity: 1;"
-	data-2000="position:fixed; top: 0px; opacity: 0;">
+	data-0="position:fixed; top: 0px; opacity: 1; display: block;"
+	data-1200="position:fixed; top: 0px; opacity: 1; display: block;"
+	data-2000="position:fixed; top: 0px; opacity: 0; display: none;"
+	data-2000="position:fixed; top: 0px; opacity: 0; display: none;">
 	<!-- envelope-->
 		<svg id="bottom" 
-			data-500="transform:translateY(0px); z-index:98;" 
-			data-800="transform:translateY(100px); z-index:98;"
+			data-500="transform:translateY(0px); -webkit-transform:translateY(0px);" 
+			data-800="transform:translateY(100px); -webkit-transform:translateY(100px);"
 			xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 614.21 622.8">
 		    <defs>
 		        <style>
@@ -43,9 +44,9 @@
 		</svg>
 
 		<svg id="mail"
-			data-500="transform:translateY(0px); z-index:99;" 
-			data-800="transform:translateY(100px); z-index:99;" 
-			data-1000="transform:translateY(-30px); " 
+			data-500="transform:translateY(0px); -webkit-transform:translateY(0px);" 
+			data-800="transform:translateY(100px); -webkit-transform:translateY(100px);" 
+			data-1000="transform:translateY(-30px); -webkit-transform:translateY(-30px);" 
 			xmlns="http://www.w3.org/2000/svg" viewBox="0 0 614.21 622.8">
 		    <defs>
 		        <style>
@@ -237,8 +238,8 @@
 		</svg>
 
 		<svg id="cover" 
-			data-500="transform:translateY(0px);" 
-			data-800="transform:translateY(100px);" 
+			data-500="transform:translateY(0px); -webkit-transform:translateY(0px);" 
+			data-800="transform:translateY(100px); -webkit-transform:translateY(100px);" 
 			xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 614.21 622.8">
 		    <defs>
 		        <style>
@@ -496,10 +497,11 @@
 		</svg>
 
 		<svg id="top" 
-			data-0="transform-origin: 50% 34.5%; transform:translateY(0px) rotateX(0deg); z-index:100;"  
-			data-400="transform-origin: 50% 34.5%; transform:translateY(0px) rotateX(-180deg); z-index:100;" 
-			data-500="transform-origin: 50% 34.5%; transform:translateY(0px) rotateX(-180deg); z-index:98;" 
-			data-800="transform-origin: 50% 34.5%; transform:translateY(100px) rotateX(-180deg); z-index:98;"
+			data-0="transform-origin: 50% 34.5%; transform:translateY(0px) rotateX(0deg); z-index:1000;  -webkit-transform:translateY(0px) rotateX(0deg)"  
+			data-400="transform-origin: 50% 34.5%; transform:translateY(0px) rotateX(-180deg); z-index:1000; -webkit-transform:translateY(0px) rotateX(-180deg)"
+			data-500="transform-origin: 50% 34.5%; transform:translateY(0px) rotateX(-180deg); z-index:998; -webkit-transform:translateY(0px) rotateX(-180deg)" 
+			data-800="transform-origin: 50% 34.5%; transform:translateY(100px) rotateX(-180deg); z-index:998; -webkit-transform:translateY(100px) rotateX(-180deg)"
+			data-1000="transform-origin: 50% 34.5%; transform:translateY(100px) rotateX(-180deg); z-index:998; -webkit-transform:translateY(100px) rotateX(-180deg)"
 			xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 614.21 622.8">
 		    <defs>
 		        <style>
@@ -535,6 +537,11 @@
 	</div>
 	<div class="container">
 		<div id="content">
+
+			<div class="photo">
+				<img src="../assets/img/photo2.jpg" />
+			</div>
+
 			<section class="red personal">
 				<h1>個人資訊</h1>
 				<ul>
@@ -553,6 +560,7 @@
 					</li>
 				</ul>
 			</section>
+
 			<section class="green work-experience">
 				<h1>工作經歷</h1>
 				<!-- 中兆匯科技服務股份有限公司 -->
@@ -702,6 +710,7 @@
 					</ol>
 				</div>
 			</section>
+
 			<section class="blue skills">
 				<h1>技能專長</h1>
 				<div class="skill-type">
@@ -749,6 +758,7 @@
 					</ul>
 				</div>
 			</section>
+
 			<section class="yellow works">
 				<h1>其他作品</h1>
 				<ul>
@@ -764,6 +774,7 @@
 					</li>
 				</ul>
 			</section>
+
 		</div>
 	</div>
 
