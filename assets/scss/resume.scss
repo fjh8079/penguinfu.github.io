@@ -322,7 +322,7 @@ ol {
     }
     @media only screen and (max-width: $mobile_size) {
     	& {
-    		display: none;
+    		display: none !important;
     	}
     }
 }
