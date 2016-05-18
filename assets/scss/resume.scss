@@ -6,8 +6,6 @@
 	src: url('../fonts/Montserrat-Regular.ttf');
 }
 
-$mobile_size: '991px';
-
 $deepgray: #989898;
 
 $red: #e55934;
@@ -21,7 +19,7 @@ body {
     letter-spacing: 2px;
     font-family: 'NotoSerif', Arial, sans-serif;
     color: #333;
-    @media only screen and (max-width: $mobile_size) {
+    @include bp-medium {
     	& {
     		font-size: 12px;
     	}
@@ -92,7 +90,7 @@ ol {
 	position: relative;
 	margin-top: 2100px;
     padding: 0px 5%;
-    @media only screen and (max-width: $mobile_size) {
+    @include bp-medium {
     	& {
     		margin-top: 0px;
     	}
@@ -107,7 +105,7 @@ ol {
     color: #000;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
     @include border-radius(2px);
-    @media only screen and (max-width: $mobile_size) {
+    @include bp-medium {
     	& {
     		margin-bottom: 20%;
     	}
@@ -163,7 +161,7 @@ ol {
 			    line-height: 2em;
 			    margin-bottom: 1em;
 		        vertical-align: middle;
-		        @media only screen and (max-width: $mobile_size) {
+		        @include bp-medium {
 		        	& {
 		        		width: 100%;
 		        	}
@@ -195,7 +193,7 @@ ol {
     			max-width: 220px;
     			width: 100%;
     		}
-    		@media only screen and (max-width: $mobile_size) {
+    		@include bp-medium {
 	    		& {
 	    			float: none;
 	    		}
@@ -222,7 +220,7 @@ ol {
 			width: 40%;
 			margin-right: 10%;
 			margin-bottom: 1em;
-			@media only screen and (max-width: $mobile_size) {
+			@include bp-medium {
 	    		& {
 	    			width: 100%;
 	    			margin: 0px;
@@ -269,16 +267,22 @@ ol {
 
 .photo {
     position: fixed;
+    z-index: 10;
     bottom: 2em;
     right: 7%;
     width: 8em;
     height: auto;
 	img {
+		cursor: pointer;
 		width: 100%;
 		@include border-radius(50%);
+		@include opacity(0.7);
 		box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
+		&:hover {
+			@include opacity(1);
+		}
 	}
-	@media only screen and (max-width: $mobile_size) {
+	@include bp-medium {
 		& {
 		    position: absolute;
 		    right: 2em;
