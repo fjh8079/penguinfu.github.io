@@ -497,11 +497,11 @@
 		</svg>
 
 		<svg id="top" 
-			data-0="transform-origin: 50% 34.5%; transform:translateY(0px) rotateX(0deg); z-index:1000;  -webkit-transform:translateY(0px) rotateX(0deg)"  
-			data-400="transform-origin: 50% 34.5%; transform:translateY(0px) rotateX(-180deg); z-index:1000; -webkit-transform:translateY(0px) rotateX(-180deg)"
-			data-500="transform-origin: 50% 34.5%; transform:translateY(0px) rotateX(-180deg); z-index:998; -webkit-transform:translateY(0px) rotateX(-180deg)" 
-			data-800="transform-origin: 50% 34.5%; transform:translateY(100px) rotateX(-180deg); z-index:998; -webkit-transform:translateY(100px) rotateX(-180deg)"
-			data-1000="transform-origin: 50% 34.5%; transform:translateY(100px) rotateX(-180deg); z-index:998; -webkit-transform:translateY(100px) rotateX(-180deg)"
+			data-0="transform-origin: 50% 34.5%; transform:translateY(0px) rotateX(0deg); z-index:1000;  -webkit-transform:translateY(0px) rotateX(0deg); transform-style: preserve-3d"  
+			data-400="transform-origin: 50% 34.5%; transform:translateY(0px) rotateX(-180deg); z-index:1000; -webkit-transform:translateY(0px) rotateX(-180deg); transform-style: preserve-3d"
+			data-500="transform-origin: 50% 34.5%; transform:translateY(0px) rotateX(-180deg); z-index:998; -webkit-transform:translateY(0px) rotateX(-180deg); transform-style: preserve-3d" 
+			data-800="transform-origin: 50% 34.5%; transform:translateY(100px) rotateX(-180deg); z-index:998; -webkit-transform:translateY(100px) rotateX(-180deg); transform-style: preserve-3d"
+			data-1000="transform-origin: 50% 34.5%; transform:translateY(100px) rotateX(-180deg); z-index:998; -webkit-transform:translateY(100px) rotateX(-180deg); transform-style: preserve-3d"
 			xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 614.21 622.8">
 		    <defs>
 		        <style>
@@ -532,7 +532,10 @@
 		    </g>
 		</svg>
 
-		<div class="hint">Scroll Down<br/><i class="fa fa-angle-double-down" aria-hidden="true"></i></div>
+		<div class="hint" onclick="scrollDown();">
+			Scroll Down<br/>
+			<i class="fa fa-angle-double-down" aria-hidden="true"></i>
+		</div>
 		
 	</div>
 	<div class="container">
@@ -783,6 +786,11 @@
     var s = skrollr.init({
     	forceHeight: false
     });
+
+    function scrollDown() {
+    	var objDiv = document.getElementById("skrollr-body");
+		objDiv.scrollTop = 2050;
+    }
     </script>
 </body>
 </html>

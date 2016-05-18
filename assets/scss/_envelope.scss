@@ -5,18 +5,16 @@
     height: 100vh;
     text-align: center;
     background-color: #3E82D6;
-    z-index: 1;
+    z-index: 100;
     @include keyframes(bounce) {
         0%, 20%, 50%, 80%, 100% {
             @include transform(translateY(0));
         }
         40% {
             @include transform(translateY(-30px));
-            -webkit-transform: translateY(-30px)
         }
         60% {
             @include transform(translateY(-15px));
-            -webkit-transform: translateY(-15px)
         }
     }
     #bottom,
@@ -47,13 +45,13 @@
     	color: #FFF;
     	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     	font-size: 2em;
-    	@include animation(bounce 3s infinite);
+    	@include animation(bounce, 3s, infinite, '');
     	i {
 		    font-size: 0.8em;
     	}
     	
     }
-    @media only screen and (max-width: $mobile_size) {
+    @include bp-medium {
     	& {
     		display: none !important;
     	}
