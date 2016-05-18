@@ -68,7 +68,7 @@ hr {
 	margin: 1em 0px;
 }
 
-.fa {
+i {
 	&:before {
 		display: inline-block;
 		width: 1.5em;
@@ -88,7 +88,7 @@ ol {
 
 .container {
 	position: relative;
-	margin-top: 2100px;
+	margin-top: 3500px;
     padding: 0px 5%;
     @include bp-medium {
     	& {

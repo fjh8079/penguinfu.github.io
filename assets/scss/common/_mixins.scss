@@ -72,12 +72,12 @@
     }
 }
 
-@mixin animation($animation, $duration, $repeat, $easing) {
-    -webkit-animation: $animation $duration $repeat $easing;
-       -moz-animation: $animation $duration $repeat $easing;
-        -ms-animation: $animation $duration $repeat $easing;
-         -o-animation: $animation $duration $repeat $easing;
-            animation: $animation $duration $repeat $easing;
+@mixin animation($animation) {
+    -webkit-animation: $animation;
+       -moz-animation: $animation;
+        -ms-animation: $animation;
+         -o-animation: $animation;
+            animation: $animation;
 }
 
 // Transitions
