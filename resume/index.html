@@ -13,7 +13,8 @@
 	<meta name="copyright" content="Copyright © Juin-Hui Fu All rights reserved.">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="stylesheet" type="text/css" href="../assets/css/fonts/fontcustom.css">
-	<link rel="stylesheet" type="text/css" href="../assets/css/resume.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/resume.css" media="screen, projection">
+	<link rel="stylesheet" type="text/css" href="../assets/css/resumePrint.css" media="print">
 	<title>Juin-Hui Fu</title>
 </head>
 <body id="skrollr-body">
@@ -540,8 +541,34 @@
 	<div class="container">
 		<div id="content">
 
-			<div class="photo">
-				<img src="../assets/img/photo2.jpg" />
+			<div class="photo-frame" data-3000="opacity: 0;" data-3500="opacity: 1;">
+				<div class="photo-div">
+					<div class="photo active">
+						<ul class="photo-click"><!--
+						--><li>
+							<a href="javascript:window.print()">
+							<i class="icon-print" aria-hidden="true" style="font-size: 2.4em; top: -0.1em;"></i>
+					    	</a>
+					    </li>
+					    <li>
+							<a href="../assets/files/resume.pdf" target="_blank">
+							<i class="icon-file-pdf-o" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="mailto:fjh8079@gmail.com">
+							<i class="icon-envelope-o" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="tel:0912742061">
+							<i class="icon-mobile" aria-hidden="true" style="font-size: 2.4em; top: -0.1em;"></i>
+					    	</a>
+					    </li>
+						</ul>
+						<img src="../assets/img/photo2.jpg" onclick="photoClick(this);" />
+					</div>
+				</div>
 			</div>
 
 			<section class="red personal">
@@ -550,8 +577,8 @@
 					<li><i class="icon-user" aria-hidden="true"></i>中文姓名：<br/>傅君卉</li><!--
 					--><li><i class="icon-user" aria-hidden="true"></i>英文姓名：<br/>Jessica Fu</li><!--
 					--><li><i class="icon-calendar" aria-hidden="true"></i>出生日期：<br/>1991/7/9</li><!--
-					--><li><i class="icon-envelope-o" aria-hidden="true"></i>Email：<br/>fjh8079@gmail.com</li><!--
-					--><li><i class="icon-mobile" aria-hidden="true"></i>行動電話：<br/>0912-742-061</li><!--
+					--><li><i class="icon-envelope-o" aria-hidden="true"></i>Email：<br/><a href="mailto:fjh8079@gmail.com">fjh8079@gmail.com</a></li><!--
+					--><li><i class="icon-mobile" aria-hidden="true"></i>行動電話：<br/><a href="tel:0912742061">0912-742-061</a></li><!--
 					--><li><i class="icon-map-marker" aria-hidden="true"></i>現居地：<br/>新北市汐止區</li><!--
 					--><li>
 						<i class="icon-graduation-cap" aria-hidden="true"></i>
@@ -578,11 +605,8 @@
 					</ul>
 					<hr/>
 					<br/>
-					<h3>職務類別</h3>
-					資深前端工程師<br/>
-					<h3>職務內容</h3>
-					創業的公司，與團隊一同開發企業產品，主開發的產品有「智慧商務行動平台WorkLink」、「雲端服務應用平台BrandLink」。<br/>
-					於團隊中主要負責的工作有：<br/>
+					<h3>職務類別</h3>資深前端工程師<br/>
+					<h3>職務內容</h3>新創公司，與團隊一同開發產品，主要開發的產品有「智慧商務行動平台WorkLink」、「雲端服務應用平台BrandLink」。<br/>於團隊中主要負責的工作有：<br/>
 					<ol>
 						<li>中兆匯科技CentralTrillion官方網站建置。</li>
 						<li>公司主產品（智慧商務行動平台WorkLink）的IM模組開發。</li>
@@ -643,11 +667,8 @@
 					</ul>
 					<hr/>
 					<br/>
-					<h3>職務類別</h3>
-					網頁程式設計師<br/>
-					<h3>職務內容</h3>
-					公司主要為開發產品「品牌服務系統iNDEXPLATES」、「社區應用服務系統LiVEPLATES」。<br/>
-					個人於團隊中負責之項目如下：<br/>
+					<h3>職務類別</h3>網頁程式設計師<br/>
+					<h3>職務內容</h3>公司主要為開發產品「品牌服務系統iNDEXPLATES」、「社區應用服務系統LiVEPLATES」。<br/>個人於團隊中負責之項目如下：<br/>
 					<ol>
 						<li>架設生活磚LiVEBRICKS官方網站。</li>
 						<li>iNDEXPLATES產品官網改版。</li>
@@ -660,15 +681,13 @@
 					<br/>
 					<ul>
 						<li>
-							<i class="icon-star-o" aria-hidden="true"></i>
-							生活磚LiVEBRiCKS 官方網站<br/>
+							<i class="icon-star-o" aria-hidden="true"></i>生活磚LiVEBRiCKS 官方網站<br/>
 							<a href="http://www.livebricks.com/" target="_blank">http://www.livebricks.com/</a>
 						</li>
 					</ul>
 					<ul>
 						<li>
-							<i class="icon-star-o" aria-hidden="true"></i>
-							iNDEXPALTES 品牌服務系統<br/>
+							<i class="icon-star-o" aria-hidden="true"></i>iNDEXPALTES 品牌服務系統<br/>
 							<a href="http://www.indexplates.com.tw/system.html" target="_blank">http://www.indexplates.com.tw/system.html</a>
 							&nbsp;<span class="gray">（官方網站）</span>
 							<br/>
@@ -679,8 +698,7 @@
 					</ul>
 					<ul>
 						<li>
-							<i class="icon-star-o" aria-hidden="true"></i>
-							LiVEPLATES 社區應用服務系統<br/>
+							<i class="icon-star-o" aria-hidden="true"></i>LiVEPLATES 社區應用服務系統<br/>
 							<a href="http://www.liveplates.com/" target="_blank">http://www.liveplates.com/</a>
 						</li>
 					</ul>
@@ -701,8 +719,7 @@
 					<hr/>
 					<br/>
 					<a href="http://www.lancer.com.tw/" target="_blank">http://www.lancer.com.tw/</a>
-					<h3>職務類別</h3>
-					助理技術顧問（企業實習工作）<br/>
+					<h3>職務類別</h3>助理技術顧問（企業實習工作）<br/>
 					<h3>職務內容</h3>
 					<ol>
 						<li>負責ERP擴充報表之設計及程式撰寫。</li>
@@ -716,9 +733,7 @@
 			<section class="blue skills">
 				<h1>技能專長</h1>
 				<div class="skill-type">
-					<h3>
-						前端技術類
-					</h3>
+					<h3>前端技術類</h3>
 					<ul>
 						<li>JavaScript</li>
 						<li>jQuery</li>
@@ -728,9 +743,7 @@
 					</ul>
 				</div><!--
 				--><div class="skill-type">
-					<h3>
-						程式設計類
-					</h3>
+					<h3>程式設計類</h3>
 					<ul>
 						<li>PHP</li>
 						<li>JSP</li>
@@ -739,9 +752,7 @@
 					</ul>
 				</div><!--
 				--><div class="skill-type">
-					<h3>
-						資料庫
-					</h3>
+					<h3>資料庫</h3>
 					<ul>
 						<li>MongoDB</li>
 						<li>MySQL</li>
@@ -749,9 +760,7 @@
 					</ul>
 				</div><!--
 				--><div class="skill-type">
-					<h3>
-						其他
-					</h3>
+					<h3>其他</h3>
 					<ul>
 						<li>Git版本控管</li>
 						<li>Gulp自動化管理工具</li>
@@ -765,15 +774,10 @@
 				<h1>其他作品</h1>
 				<ul>
 					<li>
-						<i class="icon-star-o" aria-hidden="true"></i>
-						畢業專題 iRemote<br/>
+						<i class="icon-star-o" aria-hidden="true"></i>畢業專題 iRemote<br/>
 						<a href="https://www.youtube.com/watch?v=N5-3UPymYKA" target="_blank">https://www.youtube.com/watch?v=N5-3UPymYKA</a>
 					</li>
-					<li>
-						Android遠端遙控電腦App<br/>
-						核心技術：Android、Java、WebSocket<br/>
-						獲得第17屆 資訊應用服務創新競賽 產學合作組 第一名
-					</li>
+					<li>Android遠端遙控電腦App<br/>核心技術：Android、Java、WebSocket<br/>獲得第17屆 資訊應用服務創新競賽 產學合作組 第一名</li>
 				</ul>
 			</section>
 
@@ -820,6 +824,28 @@
 			return timer;
 		};
 	}());
+
+    function photoHover(el) {
+    	var ulItem = document.querySelector('.photo');
+
+    	if(!hasClass(ulItem, 'active')) {
+    		ulItem.className += " active";
+    	}
+    }
+
+    function photoClick(el) {
+    	var ulItem = document.querySelector('.photo');
+
+    	if(!hasClass(ulItem, 'active')) {
+    		ulItem.className += " active";
+    	} else {
+    		ulItem.className = "photo";
+    	}
+    }
+
+    function hasClass(element, cls) {
+	    return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
+	}
     </script>
 </body>
 </html>
