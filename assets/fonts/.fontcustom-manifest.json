@@ -1,13 +1,13 @@
 {
   "checksum": {
-    "previous": "93f96fa16d50b7acdefb1b57a95f4d538185c2a9445fa8f5b70f3a4148fdd9cc",
-    "current": "93f96fa16d50b7acdefb1b57a95f4d538185c2a9445fa8f5b70f3a4148fdd9cc"
+    "previous": "fec4df6f744296b32a09ab9b8fa3eb294ebe9c9231bcce092e82f544738da226",
+    "current": "fec4df6f744296b32a09ab9b8fa3eb294ebe9c9231bcce092e82f544738da226"
   },
   "fonts": [
-    "fontcustom/fontcustom_93f96fa16d50b7acdefb1b57a95f4d53.ttf",
-    "fontcustom/fontcustom_93f96fa16d50b7acdefb1b57a95f4d53.svg",
-    "fontcustom/fontcustom_93f96fa16d50b7acdefb1b57a95f4d53.woff",
-    "fontcustom/fontcustom_93f96fa16d50b7acdefb1b57a95f4d53.eot"
+    "fontcustom/fontcustom_fec4df6f744296b32a09ab9b8fa3eb29.ttf",
+    "fontcustom/fontcustom_fec4df6f744296b32a09ab9b8fa3eb29.svg",
+    "fontcustom/fontcustom_fec4df6f744296b32a09ab9b8fa3eb29.woff",
+    "fontcustom/fontcustom_fec4df6f744296b32a09ab9b8fa3eb29.eot"
   ],
   "glyphs": {
     "angle-double-down": {
@@ -26,6 +26,10 @@
       "codepoint": 61698,
       "source": "./envelope-o.svg"
     },
+    "file-pdf-o": {
+      "codepoint": 61706,
+      "source": "./file-pdf-o.svg"
+    },
     "graduation-cap": {
       "codepoint": 61705,
       "source": "./graduation-cap.svg"
@@ -37,6 +41,14 @@
     "mobile": {
       "codepoint": 61700,
       "source": "./mobile.svg"
+    },
+    "phone": {
+      "codepoint": 61707,
+      "source": "./phone.svg"
+    },
+    "print": {
+      "codepoint": 61708,
+      "source": "./print.svg"
     },
     "star-o": {
       "codepoint": 61701,
