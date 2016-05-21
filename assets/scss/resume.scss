@@ -243,6 +243,7 @@ ol {
 		}
 	}
 	.works {
+		line-height: 2em;
 		&:before {
     		content: "";
     		position: absolute;
@@ -275,6 +276,7 @@ ol {
     padding: 0px 5%;
     z-index: 99;
     @include opacity(0);
+    pointer-events: none;
     .photo-div {
 	    position: relative;
 	    text-align: right;
@@ -286,6 +288,7 @@ ol {
 		    margin-right: -4em;
 		    width: 8em;
 		    height: auto;
+	        pointer-events: all;
 			img {
 				cursor: pointer;
 				width: 100%;
@@ -395,11 +398,6 @@ ol {
 						}
 					}
 				}
-				@include bp-medium {
-					& {
-						display: none;
-					}
-				}
 			}
 			&.active {
 				.photo-click {
@@ -446,11 +444,21 @@ ol {
 	    top: 2em;
 	    bottom: initial;
 	    opacity: 1 !important;
-	    filter: alpha(opacity=100) !important;; //IE8
+	    filter: alpha(opacity=100) !important; //IE8
+        pointer-events: none;
 	    .photo-div {
 	    	margin: 0px;
 	    	.photo {
 	    		margin: 0px;
+	    		.photo-click {
+			        position: fixed;
+				    right: 3%;
+				    width: 4em;
+				    height: 4em;
+				    bottom: 0px;
+				    top: initial;
+				    left: initial;
+	    		}
 	    		img {
 					box-shadow: none;
 				}

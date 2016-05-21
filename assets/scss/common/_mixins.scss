@@ -39,7 +39,7 @@
 
 // Breakpoint
 @mixin bp-large {
-    @media only screen and (max-width: 1199px) {
+    @media only screen and (min-width: 992px) {
         @content;
     }
 }
@@ -110,4 +110,14 @@
     height: 100%;
     display: inline-block;
     vertical-align: middle;
+}
+
+@mixin visuallyhidden() {
+    margin: -1px;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    position: absolute;
 }
