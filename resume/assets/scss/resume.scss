@@ -13,6 +13,22 @@ $green: #9bc53d;
 $blue: #5bc0eb;
 $orange: #fa7921;
 $yellow: #FFAB00;
+$pink: #FE57A1;
+
+::-webkit-selection {
+	background: $pink;
+	color: #FFF;
+}
+
+::-moz-selection {
+	background: $pink;
+	color: #FFF;
+}
+
+::selection {
+	background: $pink;
+	color: #FFF;
+}
 
 body {
 	font-size: 16px;
