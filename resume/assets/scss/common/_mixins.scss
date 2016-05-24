@@ -104,7 +104,7 @@
     filter: alpha(opacity=$opacity-ie); //IE8
 } 
 
-@mixin vertical-align-middle(){
+@mixin vertical-align-middle() {
     content: "";
     width: 0;
     height: 100%;
