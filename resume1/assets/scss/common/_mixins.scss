@@ -1,0 +1,123 @@
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin left-to-right-gradient($left, $right) {
+    background: $left; /* Old browsers */
+    background: -moz-linear-gradient(left, $left 0%, $right 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, $left 0%,$right 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, $left 0%,$right 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$left', endColorstr='$right',GradientType=1 ); /* IE6-9 */
+} 
+
+@mixin linear-gradient($color1, $color2) {
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from($color1), to($color2));
+	background-image: -webkit-linear-gradient($color1, color2);
+	background-image: -moz-linear-gradient($color1, color2);
+	background-image: -o-linear-gradient($color1, color2);
+}
+
+@mixin ellipsis() {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+// Set a rem font size with pixel fallback
+@function calculateRem($size) {
+    $remSize: $size / 16px;
+    @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+    font-size: $size;
+    font-size: calculateRem($size);
+}
+
+// Breakpoint
+@mixin bp-large {
+    @media only screen and (min-width: 992px) {
+        @content;
+    }
+}
+ 
+@mixin bp-medium {
+    @media only screen and (max-width: 991px) {
+        @content;
+    }
+}
+ 
+@mixin bp-small {
+    @media only screen and (max-width: 767px) {
+        @content;
+    }
+}
+
+// Animations and keyframes
+@mixin keyframes($name) {
+    @-webkit-keyframes #{$name} {
+        @content; 
+    }
+    @-moz-keyframes #{$name} {
+        @content;
+    }
+    @-ms-keyframes #{$name} {
+        @content;
+    }
+    @keyframes #{$name} {
+        @content;
+    }
+}
+
+@mixin animation($animation) {
+    -webkit-animation: $animation;
+       -moz-animation: $animation;
+        -ms-animation: $animation;
+         -o-animation: $animation;
+            animation: $animation;
+}
+
+// Transitions
+@mixin transition($transition) {
+    -webkit-transition: $transition;
+       -moz-transition: $transition;
+        -ms-transition: $transition;
+         -o-transition: $transition;
+            transition: $transition;
+}
+
+@mixin transform($transform) {
+    -webkit-transform: $transform;
+       -moz-transform: $transform;
+        -ms-transform: $transform;
+         -o-transform: $transform;
+            transform: $transform;
+}
+
+// Cross browser opacity
+@mixin opacity($opacity) {
+    opacity: $opacity;
+    $opacity-ie: $opacity * 100;
+    filter: alpha(opacity=$opacity-ie); //IE8
+} 
+
+@mixin vertical-align-middle() {
+    content: "";
+    width: 0;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@mixin visuallyhidden() {
+    margin: -1px;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    position: absolute;
+}

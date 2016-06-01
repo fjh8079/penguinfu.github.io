@@ -1,0 +1,98 @@
+{
+  "checksum": {
+    "previous": "fec4df6f744296b32a09ab9b8fa3eb294ebe9c9231bcce092e82f544738da226",
+    "current": "fec4df6f744296b32a09ab9b8fa3eb294ebe9c9231bcce092e82f544738da226"
+  },
+  "fonts": [
+    "fontcustom/fontcustom_fec4df6f744296b32a09ab9b8fa3eb29.ttf",
+    "fontcustom/fontcustom_fec4df6f744296b32a09ab9b8fa3eb29.svg",
+    "fontcustom/fontcustom_fec4df6f744296b32a09ab9b8fa3eb29.woff",
+    "fontcustom/fontcustom_fec4df6f744296b32a09ab9b8fa3eb29.eot"
+  ],
+  "glyphs": {
+    "angle-double-down": {
+      "codepoint": 61696,
+      "source": "./angle-double-down.svg"
+    },
+    "calendar": {
+      "codepoint": 61697,
+      "source": "./calendar.svg"
+    },
+    "calendar-o": {
+      "codepoint": 61704,
+      "source": "./calendar-o.svg"
+    },
+    "envelope-o": {
+      "codepoint": 61698,
+      "source": "./envelope-o.svg"
+    },
+    "file-pdf-o": {
+      "codepoint": 61706,
+      "source": "./file-pdf-o.svg"
+    },
+    "graduation-cap": {
+      "codepoint": 61705,
+      "source": "./graduation-cap.svg"
+    },
+    "map-marker": {
+      "codepoint": 61699,
+      "source": "./map-marker.svg"
+    },
+    "mobile": {
+      "codepoint": 61700,
+      "source": "./mobile.svg"
+    },
+    "phone": {
+      "codepoint": 61707,
+      "source": "./phone.svg"
+    },
+    "print": {
+      "codepoint": 61708,
+      "source": "./print.svg"
+    },
+    "star-o": {
+      "codepoint": 61701,
+      "source": "./star-o.svg"
+    },
+    "user": {
+      "codepoint": 61702,
+      "source": "./user.svg"
+    },
+    "users": {
+      "codepoint": 61703,
+      "source": "./users.svg"
+    }
+  },
+  "options": {
+    "autowidth": false,
+    "config": "fontcustom.yml",
+    "css_selector": ".icon-{{glyph}}",
+    "debug": false,
+    "font_ascent": 448,
+    "font_descent": 64,
+    "font_design_size": 16,
+    "font_em": 512,
+    "font_name": "fontcustom",
+    "force": false,
+    "input": {
+      "templates": ".",
+      "vectors": "."
+    },
+    "no_hash": false,
+    "output": {
+      "css": "fontcustom",
+      "fonts": "fontcustom",
+      "preview": "fontcustom"
+    },
+    "preprocessor_path": null,
+    "quiet": false,
+    "templates": [
+      "css",
+      "preview"
+    ]
+  },
+  "templates": [
+    "fontcustom/fontcustom.css",
+    "fontcustom/fontcustom-preview.html"
+  ]
+}
