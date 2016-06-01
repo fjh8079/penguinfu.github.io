@@ -125,7 +125,6 @@ ol {
     		top: 0px;
     		left: 0px;
     		height: 100%;
-    		@include linear-gradient($red, $green);
     	}
     	ul {
     		list-style: none;
@@ -148,7 +147,6 @@ ol {
     		top: 0px;
     		left: 0px;
     		height: 100%;
-    		@include linear-gradient($green, $blue);
     	}
     	font-size: 1em;
     	line-height: 2em;
@@ -177,7 +175,6 @@ ol {
     		top: 0px;
     		left: 0px;
     		height: 100%;
-    		@include linear-gradient($blue, $yellow);
     	}
 		.skill-type {
 			vertical-align: top;
@@ -208,7 +205,6 @@ ol {
     		top: 0px;
     		left: 0px;
     		height: 100%;
-    		@include linear-gradient($yellow, $yellow);
     	}
     	ul {
     		list-style: none;
