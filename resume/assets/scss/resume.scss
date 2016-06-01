@@ -63,6 +63,7 @@ h3 {
 a {
 	display: inline-block;
 	max-width: 100%;
+    vertical-align: middle;
 	@include ellipsis();
 }
 
@@ -143,7 +144,6 @@ ol {
 	    	h1,
 	    	a {
 	    		color: $green;
-    		    display: inline;
 	    	}
 	    }
 	    &.blue {
