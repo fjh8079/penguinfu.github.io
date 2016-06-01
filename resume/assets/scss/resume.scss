@@ -140,16 +140,16 @@ ol {
 	    		color: $red;
 	    	}
 	    }
-	    &.green {
-	    	h1,
-	    	a {
-	    		color: $green;
-	    	}
-	    }
 	    &.blue {
 	    	h1,
 	    	a {
 	    		color: $blue;
+	    	}
+	    }
+	    &.green {
+	    	h1,
+	    	a {
+	    		color: $green;
 	    	}
 	    }
 	    &.yellow {
@@ -168,7 +168,7 @@ ol {
     		top: 0px;
     		left: 0px;
     		height: 100%;
-    		@include linear-gradient($red, $green);
+    		@include linear-gradient($red, $blue);
     	}
     	ul {
     		list-style: none;
@@ -188,41 +188,7 @@ ol {
 
     	}
     }
-    .company {
-    	&:before {
-    		content: "";
-    		position: absolute;
-    		width: 8px;
-    		top: 0px;
-    		left: 0px;
-    		height: 100%;
-    		@include linear-gradient($green, $blue);
-    	}
-    	font-size: 1em;
-    	line-height: 2em;
-    	margin-bottom: 5em;
-    	> ul {
-    		list-style: none;
-		    -webkit-padding-start: 0px;
-			margin-bottom: 1em;
-    	}
-    	.logo {
-    		img {
-    			max-width: 220px;
-    			width: 100%;
-    		}
-    		@include bp-medium {
-	    		& {
-	    			float: none;
-	    		}
-	    	}
-    	}
-    	&:last-child {
-    		margin-bottom: 2em;
-    	}
-    }
-	
-	.skills {
+    .skills {
 		&:before {
     		content: "";
     		position: absolute;
@@ -230,7 +196,7 @@ ol {
     		top: 0px;
     		left: 0px;
     		height: 100%;
-    		@include linear-gradient($blue, $yellow);
+    		@include linear-gradient($blue, $green);
     	}
 		.skill-type {
 			vertical-align: top;
@@ -259,6 +225,39 @@ ol {
 			
 		}
 	}
+    .company {
+    	&:before {
+    		content: "";
+    		position: absolute;
+    		width: 8px;
+    		top: 0px;
+    		left: 0px;
+    		height: 100%;
+    		@include linear-gradient($green, $yellow);
+    	}
+    	font-size: 1em;
+    	line-height: 2em;
+    	margin-bottom: 5em;
+    	> ul {
+    		list-style: none;
+		    -webkit-padding-start: 0px;
+			margin-bottom: 1em;
+    	}
+    	.logo {
+    		img {
+    			max-width: 220px;
+    			width: 100%;
+    		}
+    		@include bp-medium {
+	    		& {
+	    			float: none;
+	    		}
+	    	}
+    	}
+    	&:last-child {
+    		margin-bottom: 2em;
+    	}
+    }
 	.works {
 		line-height: 2em;
 		&:before {

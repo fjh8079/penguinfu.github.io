@@ -13,10 +13,14 @@
 } 
 
 @mixin linear-gradient($color1, $color2) {
-	background-image: -webkit-gradient(linear, 0 0, 0 100%, from($color1), to($color2));
-	background-image: -webkit-linear-gradient($color1, color2);
-	background-image: -moz-linear-gradient($color1, color2);
-	background-image: -o-linear-gradient($color1, color2);
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,2989d8+70,7db9e8+100 */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+67,7db9e8+100 */
+background: $color1; /* Old browsers */
+background: -moz-linear-gradient(top, $color1 70%, $color2 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, $color1 70%,$color2 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, $color1 70%,$color2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2',GradientType=0 ); /* IE6-9 */
+
 }
 
 @mixin ellipsis() {
