@@ -356,17 +356,17 @@ ol {
 						}
 					}
 					&:nth-child(2) {
-						background-color: $blue;
-						& span {
-							border-color: $blue;
-							color: $blue;
-						}
-					}
-					&:nth-child(3) {
 						background-color: $green;
 						& span {
 							border-color: $green;
 							color: $green;
+						}
+					}
+					&:nth-child(3) {
+						background-color: $blue;
+						& span {
+							border-color: $blue;
+							color: $blue;
 						}
 					}
 					&:nth-child(4) {
