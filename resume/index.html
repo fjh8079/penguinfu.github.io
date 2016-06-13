@@ -799,7 +799,6 @@
 					</li>
 					<li>Android遠端遙控電腦App<br/>核心技術：Android、Java、WebSocket<br/>獲得第17屆 資訊應用服務創新競賽 產學合作組 第一名</li>
 				</ul>
-
 			</section>
 
 		</div>
@@ -847,13 +846,16 @@
 	}());
 
     function photoClick(el) {
-    	var ulItem = document.querySelector('.photo');
 
-    	if(!hasClass(ulItem, 'active')) {
-    		ulItem.className += " active";
-    	} else {
-    		ulItem.className = "photo";
-    	}
+    	window.open('http://penguinfu.github.io/resume/assets/files/Portfolio.pdf');
+
+    	// var ulItem = document.querySelector('.photo');
+
+    	// if(!hasClass(ulItem, 'active')) {
+    	// 	ulItem.className += " active";
+    	// } else {
+    	// 	ulItem.className = "photo";
+    	// }
     }
 
     function hasClass(element, cls) {
