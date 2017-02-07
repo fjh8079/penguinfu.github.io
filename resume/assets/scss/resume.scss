@@ -8,6 +8,7 @@
 
 $deepgray: #989898;
 
+
 $red: #e55934;
 $green: #9bc53d;
 $blue: #5bc0eb;
@@ -179,6 +180,7 @@ ol {
 			    line-height: 2em;
 			    margin-bottom: 1em;
 		        vertical-align: top;
+		        float: left;
 		        @include bp-medium {
 		        	& {
 		        		width: 100%;
@@ -204,6 +206,8 @@ ol {
 			width: 40%;
 			margin-right: 10%;
 			margin-bottom: 1em;
+			letter-spacing: 0;
+			float: left;
 			@include bp-medium {
 	    		& {
 	    			width: 100%;
@@ -256,6 +260,14 @@ ol {
     	}
     	&:last-child {
     		margin-bottom: 2em;
+    	}
+    	ol {
+    		ul {
+	    		li {
+	    			font-size: 0.8em;
+	    			color: #666;
+	    		}
+	    	}
     	}
     }
 	.works {
