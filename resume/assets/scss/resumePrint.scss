@@ -23,7 +23,6 @@ body {
 
 h1 {
 	font-size: 1.8em;
-	margin-bottom: 1.5em;
 }
 
 h2 {
@@ -61,6 +60,7 @@ hr {
 	border: none;
 	border-bottom: 1px solid #e0e0e0;
 	margin: 1em 0px;
+	margin-bottom: 0;
 }
 
 i {
@@ -149,8 +149,8 @@ ol {
     		height: 100%;
     	}
     	font-size: 1em;
-    	line-height: 2em;
-    	margin-bottom: 5em;
+    	line-height: 1.9em;
+    	margin-bottom: 2em;
     	> ul {
     		list-style: none;
 		    -webkit-padding-start: 0px;
@@ -180,7 +180,7 @@ ol {
 			vertical-align: top;
 			display: inline-block;
 			width: 40%;
-			margin-right: 10%;
+			margin-right: 5%;
 			margin-bottom: 1em;
 			ul {
 				list-style: none;
